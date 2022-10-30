@@ -1,0 +1,15 @@
+<div class="container ">
+    <div class="row mt-2">
+        <h2>Top Headlines</h2>
+        <div *ngFor="let new of topNews" class="col-lg-3 mt-3 mb-3">
+            <div class="box ">
+                <img src="{{new.urlToImage}}" width="100%" alt="">
+                <h3 class="mt-3 mb-2" style="font-weight: bold;">{{new.title}}</h3>
+                <!-- <p>{{new.content}}</p> -->
+                <a href="{{new.url}}" class="btn btn-dark btn-sm mt-2">Read more</a>
+            </div>
+        
+        </div>
+
+    </div>
+</div>
